@@ -1,0 +1,74 @@
+body {
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  background-color: white; /* Tło */
+  color: #0a6bb1; /* Kolor tekstu */
+  border-radius: 5px; /* Zaokrąglenie */
+  padding: 5px 15px; /* Wewnętrzny odstęp */
+  margin-right: 10px; /* Marginesy między przyciskami */
+}
+
+.navbar-nav .nav-link.active
+{
+  background-color: white; /* Tło */
+  color: #0a6bb1; /* Kolor tekstu */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.href
+{
+  background-color: white; /* Tło */
+  color: #0a6bb1; /* Kolor tekstu */
+
+}
+.navbar-nav .nav-link.dropdown-toggle
+{
+  background-color: white; /* Tło */
+  color: #0a6bb1; /* Kolor tekstu */
+
+}
+
+
+.logo {
+  max-width: 100px; /* Dostosuj rozmiar logo według własnych potrzeb */
+  margin-right: 20px; /* Odstęp między logiem a tekstem */
+}
+
+.company-info {
+  text-align: left; /* Tekst po lewej stronie */
+}
+
+.company-name {
+  font-size: 2rem; /* Duże litery na większych ekranach */
+color: rgb(15, 152, 207);
+}
+
+.company-motto {
+  font-size: 0.75rem; /* Mniejsze litery na większych ekranach */
+  color: rgb(17, 175, 237);
+}
+
+h1{
+  
+}
+/* Media queries dla responsywności */
+@media (max-width: 768px) {
+  .logo{
+    width: 50%;
+  }
+  .company-info {
+      text-align: center; /* Centrowanie tekstu na mniejszych ekranach */
+  }
+
+  .company-name {
+      font-size: 1.5rem; /* Dostosuj rozmiar liter na mniejszych ekranach */
+  }
+
+  .company-motto {
+      font-size: 0.5rem; /* Dostosuj rozmiar liter na mniejszych ekranach */
+  }
+}
