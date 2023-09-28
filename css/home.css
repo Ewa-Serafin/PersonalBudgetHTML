@@ -52,10 +52,19 @@ color: rgb(15, 152, 207);
   color: rgb(17, 175, 237);
 }
 
-h1{
-  
+.text-body-emphasis-h1 {
+  margin-top: 0;
+  color: #053896;
+  font-family:sans-serif;
 }
+
+.lead{
+color:#053896;
+text-align: justify;
+}
+
 /* Media queries dla responsywności */
+
 @media (max-width: 768px) {
   .logo{
     width: 50%;
