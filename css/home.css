@@ -29,13 +29,13 @@ body {
 {
   background-color: white; /* Tło */
   color: #0a6bb1; /* Kolor tekstu */
-
 }
 
 
 .logo {
   max-width: 100px; /* Dostosuj rozmiar logo według własnych potrzeb */
   margin-right: 20px; /* Odstęp między logiem a tekstem */
+  
 }
 
 .company-info {
@@ -56,6 +56,7 @@ color: rgb(15, 152, 207);
   margin-top: 0;
   color: #053896;
   font-family:sans-serif;
+  text-align: center;
 }
 
 .lead{
@@ -63,6 +64,12 @@ color:#053896;
 text-align: justify;
 }
 
+.feature-icon {
+  fill: cornflowerblue; /* Kolor ikony */
+  height: 1.75rem; /* Wysokość ikony */
+  width: 1.75rem; /* Szerokość ikony */
+  margin-right: 10px; /* Odstęp między ikoną a tekstem */
+}
 /* Media queries dla responsywności */
 
 @media (max-width: 768px) {
