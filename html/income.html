@@ -8,7 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/userMenu.css">
-  <link rel="stylesheet" href="../css/income.css"
+  <link rel="stylesheet" href="../css/userFunction.css"
 </head>
 
 <body>
@@ -32,22 +32,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="income.html">Add Income</a>
+                <a class="nav-link" aria-current="page" href="income.html">Add Incomes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="expense.html">Add Expense</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"aria-current="page" href="checBalance.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Check Balance
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="curentMonth.html" style="color: #0a6bb1">Current Month</a></li>
-                  <li><a class="dropdown-item" href="previousMonth.html" style="color: #0a6bb1">Previous Month</a></li>
-                  <li><a class="dropdown-item" href="customPeriod.html" style="color: #0a6bb1">Custom Period</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="balance.html">Check Balance</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" aria-current="page" href="settings.html" role="button" data-bs-toggle="dropdown"
@@ -77,61 +68,54 @@
     </div>
 
     <!--Główna treść-->
+  
     <div id="content">
-    <div class="container">
-      <main class="text-center ">
-        <div  id="inside" class="py-5">
-          <div class="col-md-7 col-lg-8">
-            <h4 class="mb-3">Add Income</h4>
-            <form class="needs-validation" novalidate="">
-              <div class="row g-3">
-                <div class="col-12">
-                  <label for="amount" class="form-label">Amount</label>
-                  <input type="text"  id="amount" placeholder="Enter amount" required="">
-                  <div class="invalid-feedback">
-                    Amount is required.
-                  </div>
-                </div>
-  
-                <div class="col-12">
-                  <label for="date" class="form-label">Date</label>
-                  <input type="text" id="date" placeholder="Enter date (yyyy-mm-dd)"required="">
-                </div>
-  
-                <div class="col-12">
-                  <label class="form-label">Category</label>
-                  <select name="Category" id="category" required="">
-                    <option value="Salary">Salary</option>
-                    <option value="Bank Interest">Bank Interest</option>
-                    <option value="Allegro Sale">Allegro Sale</option>
-                    <option value="Other">Other</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Category is required.
-                  </div>
-                </div>
-  
-                <div class="col-12">
-                  <label for="comment" class="form-label">Comment (optional)</label>
-                  <input type="text" id="comment" placeholder="Enter comment"required="">
-                </div>
-  
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Add</button>
-                  <button class="btn btn-secondary" type="button">Cancel</button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </main>
-    </div>
-  </div>
+      <div id="income-section">
+			<div id="header">
+				<h1>Add income</h1>
+			</div>
+			
+			<div id="inside">
+				<p>
+          Enter the income amount <input type="number" >
+				</p>
+				
+				<p>
+          Enter the date <input type="date" >
+				</p>
+				<p>
+          Select a category
+				<select name="kategoria">
+				  <option value="wynagrodzenie">Salary</option>
+				  <option value="odsetki">Bank Interest</option>
+				  <option value="sprzedaz">Online Sales</option>
+				  <option value="inne">Other</option>
+				</select>
+				</p>
+        <p>
+          Comment  <input type="note" >
+				</p>
+				<p>
+				<input type="submit" value="Dodaj">
+				<input type="submit" value="Anuluj">
+				</p>
+			</div>
+		</div>
 
-
-     
-     
-</div>
+		<div style="clear: both;"></div>
+	</div>
+                 <!-- Footer -->
+        
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+              <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
+            </div>
+          </footer>
+        </div>  
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
