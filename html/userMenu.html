@@ -7,7 +7,7 @@
   <title>Personal Budget User Menu</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <link rel="stylesheet" href="../css/userMenu.css">
+    <link rel="stylesheet" href="../css/userMenu.css">
 </head>
 
 <body>
@@ -36,17 +36,8 @@
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="expense.html">Add Expense</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle"aria-current="page" href="checBalance.html" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Check Balance
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="curentMonth.html" style="color: #0a6bb1">Current Month</a></li>
-                  <li><a class="dropdown-item" href="previousMonth.html" style="color: #0a6bb1">Previous Month</a></li>
-                  <li><a class="dropdown-item" href="customPeriod.html" style="color: #0a6bb1">Custom Period</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="balance.html">Check Balance</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" aria-current="page" href="settings.html" role="button" data-bs-toggle="dropdown"
@@ -54,6 +45,10 @@
                   Settings
                 </a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="changePassword.html" style="color: #0a6bb1">Change Name</a>
+                  </li>
+                  <li><a class="dropdown-item" href="changePassword.html" style="color: #0a6bb1">Change Email</a>
+                  </li>
                   <li><a class="dropdown-item" href="changePassword.html" style="color: #0a6bb1">Change Password</a>
                   </li>
                 </ul>
@@ -74,19 +69,20 @@
         </div>
       </nav>
     </div>
-    <!-- Footer -->
 
-  <div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <div class="col-md-4 d-flex align-items-center">
-        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-          <svg class="bi" width="30" height="24">
-            <use xlink:href="#bootstrap"></use>
-          </svg>
-        </a>
-        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
-      </div>
 
+     <!-- Footer -->
+        
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
+              </div>
+            </footer>
+          </div>
   
     </footer>
   </div>
