@@ -1,0 +1,67 @@
+
+
+/* Styl dla kontenera */
+.container {
+    color: rgb(6, 29, 112);
+
+    min-width: 600px;
+    min-height: 100px;
+    padding: 10px;
+    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-top: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #a9c9ea;
+    box-shadow: 3px 3px 30px 5px rgba(97,97,97,1);
+    display: flex;
+    flex-direction: column; /* Wyśrodkowanie w pionie */
+    align-items: center; /* Wyśrodkowanie w poziomie */
+}
+
+
+input[type="text"]{
+  width: 400px;
+  height: 36px;
+  background-color: white;
+  color: #666;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 0px;
+  justify-content: right;
+  
+
+}
+/* Ikona kalendarza */
+input[type="text"][id="date"] {
+  background-image: url('../svg/calendar-icon.svg');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 100px; /* Dodaj miejsce na ikonę kalendarza */
+}
+
+
+/* Lista rozwijana */
+
+select {
+  min-width: 400px;
+  height: 36px;
+  background-color: white;
+  color: #666;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 0px;
+
+/* Przenieś tytuły komórek nad komórki w wersji mobilnej */
