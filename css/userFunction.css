@@ -1,0 +1,202 @@
+#content {
+  color: black;
+  width: 600px;
+  min-height: 100px;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: rgb(213, 227, 242);
+}
+
+#header {
+  width: 500px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+#inside {
+  text-align: right;
+  margin-right: 80px;
+}
+
+.option {
+  color: white;
+  width: 140px;
+  height: 80px;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #747474;
+  margin-bottom: 10px;
+}
+
+.option:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.optionClicked {
+  color: white;
+  width: 140px;
+  height: 80px;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #88a0dd;
+  margin-bottom: 10px;
+}
+
+a.optionlinkhtml5 {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Anton", sans-serif;
+  color: #0a6bb1;
+  font-size: 30px;
+  letter-spacing: 4px;
+
+}
+
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+  width: 300px;
+  height: 36px;
+  background-color: white;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+}
+
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+select:focus {
+  border: 2px solid #0a6bb1;
+  background-color: #c7e2f6;
+  color: #072b37;
+}
+
+#form input[type="submit"] {
+  width: 300px;
+  background-color: rgb(52, 52, 208);
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 15px 10px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 150px;
+  background-color: #6690c7;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(21, 66, 115);
+}
+input[type="reset"] {
+  width: 150px;
+  background-color: #8290a2;
+  font-size: 13px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  padding: 10px 5px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+input[type="reset"]:hover {
+  background-color: rgb(21, 66, 115);
+}
+select {
+  width: 300px;
+  height: 36px;
+  background-color: white;
+  color: #666;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+  margin-right: 0px;
+}
+
+
+@media (max-width: 768px) {
+
+  #content {
+    width: 80%;
+    margin: 50px auto;
+
+  }
+  #header {
+    width: 0%;
+    text-align: left;
+
+  }
+  #inside {
+    text-align: right;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 100%;
+    text-align: center;
+  }
+  select {
+    width: 50%;
+    height: 36px;
+  }
+
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+  width: 50%;
+  height: 36px;
+
+}
+}

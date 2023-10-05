@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Budget User Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/userMenu.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/userFunction.css">
+ </head>
+
+<body>
+
+  <!-- Navbar -->
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-light">
+      <div class="container-fluid">
+        <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0">
+          <img src="../images/logo.png" alt="Logo Firmy" class="logo">
+          <div class="company-info">
+            <h1 class="company-name fs-lg-4 fs-md-3 fs-sm-2">Budget Buddy</h1>
+            <p class="company-motto fs-lg-2 fs-md-1 fs-sm-0">Your partner in financial management</p>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="income.html">Add Income</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="expense.html">Add Expense</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="balance.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                Settings
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-primary me-2">Log Out</button>
+          </form>
+          <div class="nav-item">
+            <a class="nav-link" href="#" onclick="changeLanguage('pl')">
+              <img src="../images/plFlag.png" alt="PL Flag" class="flag">
+            </a>
+            <a class="nav-link" href="#" onclick="changeLanguage('en')">
+              <img src="../images/angFlag.png" alt="UK Flag" class="flag">
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Modal "Settings" -->
+  <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="settingsModalLabel">Settings</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="username" class="form-label">New username</label>
+              <input type="text" class="form-control" id="username">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">New Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">New Password</label>
+              <input type="password" class="form-control" id="password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Główna treść-->
+
+  <div id="content">
+    <div id="expense-section">
+      <div id="header">
+        <h1>Add Expenses</h1>
+      </div>
+
+      <div id="inside">
+        <p>
+          Amount <input type="number">
+        </p>
+
+        <p>
+          Date <input type="date">
+        </p>
+        <p>
+          Payment Method
+          <select name="kategoria">
+            <option value="wynagrodzenie">Cash</option>
+            <option value="odsetki">Debit Card</option>
+            <option value="sprzedaz">Credit Card</option>
+          </select>
+        </p>
+        <p>
+          Category
+          <select name="category">
+            <option value="food">Food</option>
+            <option value="housing">Housing</option>
+            <option value="transportation">Transportation</option>
+            <option value="telecommunications">Telecommunications</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="clothing">Clothing</option>
+            <option value="hygiene">Hygiene</option>
+            <option value="children">Children</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="trip">Trip</option>
+            <option value="training">Training</option>
+            <option value="books">Books</option>
+            <option value="debt">Debt Repayment</option>
+            <option value="donation">Donation</option>
+            <option value="other">Other Expenses</option>
+          </select>
+        </p>
+        <p>
+          Comment <input type="text">
+        </p>
+        <p>
+          <input type="submit" value="Save">
+          <input type="submit" value="Cancel">
+        </p>
+      </div>
+    </div>
+
+    <div style="clear: both;"></div>
+  </div>
+
+  <!-- Footer -->
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

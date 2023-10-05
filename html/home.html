@@ -8,6 +8,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
@@ -19,7 +20,7 @@
           <img src="../images/logo.png" alt="Logo Firmy" class="logo">
           <div class="company-info">
             <h1 class="company-name fs-lg-4 fs-md-3 fs-sm-2">Budget Buddy</h1>
-            <p class="company-motto fs-lg-2 fs-md-1 fs-sm-0">Your partner in financial management.</p>
+            <p class="company-motto fs-lg-2 fs-md-1 fs-sm-0">Your partner in financial management</p>
           </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -41,18 +42,21 @@
                 Free to download
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#" style="color: #0a6bb1">Monthly Budget</a></li>
-                <li><a class="dropdown-item" href="#" style="color: #0a6bb1">50/30/20 Budget</a></li>
-                <li><a class="dropdown-item" href="#" style="color: #0a6bb1">Saving Tracker</a>
+                <li><a class="dropdown-item" href="../images/Budget_Planner.pdf" style="color: #0a6bb1"
+                    download="Monthly_Budget_Planer.pdf">Monthly Budget</a></li>
+                <li><a class="dropdown-item" href="../images/50_30_20_budget_template.pdf" style="color: #0a6bb1"
+                    download="50_30_20_Budget_Planer.pdf">50/30/20 Budget</a></li>
+                <li><a class="dropdown-item" href="../images/Year_Tracker.pdf" style="color: #0a6bb1"
+                    download="Saving_Traker.pdf">Saving Tracker</a>
                 </li>
               </ul>
             </li>
           </ul>
           <form class="d-flex" role="search">
             <button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal"
-              data-bs-target="#loginModal">Login</button>
+              data-bs-target="#loginModal">Log In</button>
             <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal"
-              data-bs-target="#signupModal">Sign-up</button>
+              data-bs-target="#signupModal">Create Account</button>
           </form>
           <div class="nav-item">
             <a class="nav-link" href="#" onclick="changeLanguage('pl')">
@@ -65,17 +69,22 @@
         </div>
       </div>
     </nav>
+<<<<<<< HEAD
 </div>
+=======
+  </div>
+  
+>>>>>>> feature-user-function
   <!-- Login Modal -->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="loginModalLabel">Login</h5>
+          <h5 class="modal-title" id="loginModalLabel">Log In</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <from>
+          <form>
             <div class="mb-3">
               <label for="username" class="form-label">Username</label>
               <input type="text" class="form-control" id="username">
@@ -84,11 +93,11 @@
               <label for="password" class="form-label">Password</label>
               <input type="password" class="form-control" id="password">
             </div>
-          </from>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-primary">Log In</button>
         </div>
       </div>
     </div>
@@ -99,11 +108,10 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="signupModalLabel">Sign-up</h5>
+          <h5 class="modal-title" id="signupModalLabel">Create Account</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-
           <form>
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
@@ -118,7 +126,6 @@
               <input type="password" class="form-control" id="password">
             </div>
           </form>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -129,89 +136,32 @@
   </div>
 
 
-    <!-- Welcome Section -->
-    <section id="Welcome">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="px-3 text-center">
-                <h2 class="display-4 fw-bold text-body-emphasis-h1">Master Your Money, Unleash Your Dreams: Start
-                    Here!</h2>
-                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                    <div class="col-10 col-sm-8 col-lg-6">
-                        <img src="../images/spendmoney.jpg" class="d-block mx-lg-auto img-fluid" alt="Spend Money"
-                            width="700" height="500" loading="lazy">
-                    </div>
-                    <div class="col-lg-6">
-                        <p class="lead">Have you ever wondered about the benefits of effectively managing your
-                            personal budget? Our financial management program is the tool that will help you
-                            discover these benefits and make your finances more stable and predictable.</p>
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
-                                data-bs-target="#signupModal">Sign-up</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Featured Section -->
-        <div class="container col-xxl-8 px-4 py-5">
-            <h2 class="pb-2" style="color: #053896;">Why should you choose Us?</h2>
-            <div class="row row-cols-1 row-cols-lg-5 g-4 py-5">
-                <div class="col d-flex align-items-start order-1 order-md-1 order-lg-1">
-                    <img src="../svg/walet.svg" alt="Wallet Icon" class="feature-icon">
-                    <div>
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Money Equals Freedom:</h3>
-                        <p>Being in control of your finances gives you the freedom to make choices.
-                            You can plan for your future, achieve your dreams, and avoid the stress of unexpected
-                            expenses.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start order-2 order-md-2 order-lg-1">
-                    <img src="../svg/alarm.svg" alt="alarm Icon" class="feature-icon">
-                    <div>
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Time Savings:</h3>
-                        <p>Our tool automates many processes, saving you valuable time.
-                            This allows you to focus on things that truly matter to you.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start order-3 order-md-3 order-lg-1">
-                    <img src="../svg/lock.svg" alt="lock Icon" class="feature-icon">
-                    <div>
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Financial Security:</h3>
-                        <p> Managing your finances is key to financial security.
-                            Regardless of life's ups and downs, our program will help you build a financial cushion
-                            for unexpected events.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start order-4 order-md-4 order-lg-2">
-                    <img src="../svg/star.svg" alt="star Icon" class="feature-icon">
-                    <div>
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Goals and Dreams:</h3>
-                        <p>Our program lets you set financial goals and track your progress toward achieving them.
-                            It's a great motivational tool to help you reach your plans.</p>
-                    </div>
-                </div>
-                <div class="col d-flex align-items-start order-5 order-md-5 order-lg-2">
-                    <img src="../svg/wifi.svg" alt="wifi Icon" class="feature-icon">
-                    <div>
-                        <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Accessibility and Mobility: </h3>
-                        <p>You can use our program from anywhere and on any device.
-                            This makes managing your finances easier and more accessible than ever.</p>
-                    </div>
-
-                </div>
-            </div>
-            <h3 class="display-6 fw-bold" style="color: #053896; text-align: center; ">Register and begin your
-                financial journey today!</h3>
-
+  <!-- Welcome Section -->
+  <section id="Welcome">
+    <div class="container col-xxl-8 px-4 py-5">
+      <div class="px-3 text-center">
+        <h2 class="display-4 fw-bold text-body-emphasis-h1">Master Your Money, Unleash Your Dreams: Start
+          Here!</h2>
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="../images/spendmoney.jpg" class="d-block mx-lg-auto img-fluid" alt="Spend Money" width="700"
+              height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <p class="lead">Have you ever wondered about the benefits of effectively managing your
+              personal budget? Our financial management program is the tool that will help you
+              discover these benefits and make your finances more stable and predictable.</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
-                    data-bs-target="#signupModal">Sign-up</button>
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
+                data-bs-target="#signupModal">Create Account</button>
             </div>
-
+          </div>
         </div>
+      </div>
+    </div>
+  </section>
 
+<<<<<<< HEAD
 
         <!-- Footer -->
         
@@ -224,13 +174,80 @@
                 <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
               </div>
             </footer>
+=======
+    <!-- Featured Section -->
+    <div class="container col-xxl-8 px-4 py-5">
+      <h2 class="pb-2" style="color: #053896;">Why should you choose Us?</h2>
+      <div class="row row-cols-1 row-cols-lg-5 g-4 py-5">
+        <div class="col d-flex align-items-start order-1 order-md-1 order-lg-1">
+          <img src="../svg/walet.svg" alt="Wallet Icon" class="feature-icon">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Money Equals Freedom:</h3>
+            <p>Being in control of your finances gives you the freedom to make choices.
+              You can plan for your future, achieve your dreams, and avoid the stress of unexpected
+              expenses.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start order-2 order-md-2 order-lg-1">
+          <img src="../svg/alarm.svg" alt="alarm Icon" class="feature-icon">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Time Savings:</h3>
+            <p>Our tool automates many processes, saving you valuable time.
+              This allows you to focus on things that truly matter to you.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start order-3 order-md-3 order-lg-1">
+          <img src="../svg/lock.svg" alt="lock Icon" class="feature-icon">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Financial Security:</h3>
+            <p> Managing your finances is key to financial security.
+              Regardless of life's ups and downs, our program will help you build a financial cushion
+              for unexpected events.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start order-4 order-md-4 order-lg-2">
+          <img src="../svg/star.svg" alt="star Icon" class="feature-icon">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Goals and Dreams:</h3>
+            <p>Our program lets you set financial goals and track your progress toward achieving them.
+              It's a great motivational tool to help you reach your plans.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start order-5 order-md-5 order-lg-2">
+          <img src="../svg/wifi.svg" alt="wifi Icon" class="feature-icon">
+          <div>
+            <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Accessibility and Mobility: </h3>
+            <p>You can use our program from anywhere and on any device.
+              This makes managing your finances easier and more accessible than ever.</p>
+>>>>>>> feature-user-function
           </div>
 
+        </div>
+      </div>
+      <h3 class="display-6 fw-bold" style="color: #053896; text-align: center; ">Register and begin your
+        financial journey today!</h3>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" data-bs-toggle="modal"
+          data-bs-target="#signupModal">Create Account</button>
+      </div>
+    </div>
 
-        <!-- Bootstrap Scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-            crossorigin="anonymous"></script>
+
+    <!-- Footer -->
+    <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
+      </div>
+    </footer>
+  </div>
+
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
