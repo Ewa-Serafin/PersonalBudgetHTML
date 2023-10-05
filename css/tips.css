@@ -8,11 +8,8 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  /* Ustaw tło głównej treści */
   padding: 20px;
-  /* Dodaj wewnętrzne wypełnienie głównej treści */
   border-radius: 10px;
-  /* Dodaj zaokrąglenie rogów */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* Dodaj cień */
 }

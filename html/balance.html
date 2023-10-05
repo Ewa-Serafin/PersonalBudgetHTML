@@ -8,61 +8,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/userMenu.css">
+  <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/userFunction.css">
 </head>
 
 <body>
 
-      <!-- Navbar -->
-      <div id="navbar">
-        <nav class="navbar navbar-expand-lg bg-body-light">
-          <div class="container-fluid">
-            <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0">
-              <img src="../images/logo.png" alt="Logo Firmy" class="logo">
-              <div class="company-info">
-                <h1 class="company-name fs-lg-4 fs-md-3 fs-sm-2">Budget Buddy</h1>
-                <p class="company-motto fs-lg-2 fs-md-1 fs-sm-0">Your partner in financial management</p>
-              </div>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="income.html">Add Income</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="expense.html">Add Expense</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="balance.html">History</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="settings.html" data-bs-toggle="modal" data-bs-target="#settingsModal">
-                    Settings
-                  </a>
-                </li>
-              </ul>
-              <form class="d-flex" role="search">
-                <button type="button" class="btn btn-primary me-2">Log Out</button>
-              </form>
-              <div class="nav-item">
-                <a class="nav-link" href="#" onclick="changeLanguage('pl')">
-                  <img src="../images/plFlag.png" alt="PL Flag" class="flag">
-                </a>
-                <a class="nav-link" href="#" onclick="changeLanguage('en')">
-                  <img src="../images/angFlag.png" alt="UK Flag" class="flag">
-                </a>
-              </div>
-            </div>
+  <!-- Navbar -->
+  <div id="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-light">
+      <div class="container-fluid">
+        <a href="home.html" class="d-flex align-items-center mb-3 mb-md-0">
+          <img src="../images/logo.png" alt="Logo Firmy" class="logo">
+          <div class="company-info">
+            <h1 class="company-name fs-lg-4 fs-md-3 fs-sm-2">Budget Buddy</h1>
+            <p class="company-motto fs-lg-2 fs-md-1 fs-sm-0">Your partner in financial management</p>
           </div>
-        </nav>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="income.html">Add Income</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="expense.html">Add Expense</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="balance.html">History</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="settings.html" data-bs-toggle="modal" data-bs-target="#settingsModal">
+                Settings
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button type="button" class="btn btn-primary me-2">Log Out</button>
+          </form>
+          <div class="nav-item">
+            <a class="nav-link" href="#" onclick="changeLanguage('pl')">
+              <img src="../images/plFlag.png" alt="PL Flag" class="flag">
+            </a>
+            <a class="nav-link" href="#" onclick="changeLanguage('en')">
+              <img src="../images/angFlag.png" alt="UK Flag" class="flag">
+            </a>
+          </div>
+        </div>
       </div>
-  
-      <!-- Modal "Settings" -->
+    </nav>
+  </div>
+
+  <!-- Modal "Settings" -->
   <div class="modal fade" id="settingsModal" tabindex="-1" aria-labelledby="settingsModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -71,7 +71,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-           <from>
+          <form>
             <div class="mb-3">
               <label for="username" class="form-label">New username</label>
               <input type="text" class="form-control" id="username">
@@ -84,7 +84,7 @@
               <label for="password" class="form-label">New Password</label>
               <input type="password" class="form-control" id="password">
             </div>
-          </from>
+          </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -93,53 +93,62 @@
     </div>
   </div>
 
-    <!-- Główna treść -->
-  
-    <div id="content">
-      <div id="balance-section">
-        <div id="header">
-          <h1>Check Balance</h1>
-        </div>
-        
-        <div id="inside">
+  <!--Main-->
+  <div id="content">
+    <div id="balance-section">
+      <div id="header">
+        <h1>History</h1>
+      </div>
+
+      <div id="inside">
+        <p>
+          Period:
+          <select name="period">
+            <option value="current_month">Current Month</option>
+            <option value="previous_month">Previous Month</option>
+            <option value="current_year">Current Year</option>
+            <option value="custom">Custom Period</option>
+          </select>
+        </p>
+        <div id="custom_dates" style="display: none;">
           <p>
-            Select period:
-            <select name="period">
-              <option value="current_month">Current Month</option>
-              <option value="previous_month">Previous Month</option>
-              <option value="current_year">Current Year</option>
-              <option value="custom">Custom Period</option>
-            </select>
+            Start Date: <input type="date" name="start_date">
           </p>
-          <div id="custom_dates" style="display: none;">
-            <p>
-              Start Date: <input type="date" name="start_date">
-            </p>
-            <p>
-              End Date: <input type="date" name="end_date">
-            </p>
-          </div>
           <p>
-            <input type="submit" value="Calculate Balance">
-            <input type="reset" value="Cancel">
+            End Date: <input type="date" name="end_date">
           </p>
         </div>
+        <p>
+          <input type="submit" value="Show transactions">
+          <input type="reset" value="Cancel">
+        </p>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"></script>
-    <script>
-     // to wyczytalam w necie
-      const periodSelect = document.querySelector('select[name="period"]');
-      const customDates = document.getElementById('custom_dates');
-      periodSelect.addEventListener('change', () => {
-        customDates.style.display = periodSelect.value === 'custom' ? 'block' : 'none';
-      });
-    </script>
-    <!--tabele-->
-    <!--charts-->
-    
-  </body>
+  <!-- Footer -->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Ewa Serafin-Bełza</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script>
+    // to wyczytalam w necie
+    const periodSelect = document.querySelector('select[name="period"]');
+    const customDates = document.getElementById('custom_dates');
+    periodSelect.addEventListener('change', () => {
+      customDates.style.display = periodSelect.value === 'custom' ? 'block' : 'none';
+    });
+  </script>
+  <!--tabele-->
+  <!--charts-->
+
+</body>
+
 </html>

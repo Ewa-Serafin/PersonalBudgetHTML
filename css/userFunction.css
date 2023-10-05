@@ -1,6 +1,5 @@
 #content {
   color: black;
-
   width: 600px;
   min-height: 100px;
   padding: 10px;
@@ -75,7 +74,7 @@ h1 {
 
 input[type="number"],
 input[type="date"],
-input[type="note"] {
+input[type="text"] {
   width: 300px;
   height: 36px;
   background-color: white;
@@ -92,7 +91,7 @@ input[type="note"] {
 
 input[type="number"]:focus,
 input[type="date"]:focus,
-input[type="note"]:focus,
+input[type="text"]:focus,
 select:focus {
   border: 2px solid #0a6bb1;
   background-color: #c7e2f6;
@@ -168,18 +167,36 @@ select {
 
 
 @media (max-width: 768px) {
+
   #content {
-    width: 50%;
+    width: 80%;
     margin: 50px auto;
+
   }
   #header {
-    width: 50%;
-    margin-left: 0;
-    margin-right: 0;
+    width: 0%;
+    text-align: left;
+
   }
   #inside {
-    text-align: left;
+    text-align: right;
     margin-right: 0;
   }
-}
 
+  h1 {
+    font-size: 100%;
+    text-align: center;
+  }
+  select {
+    width: 50%;
+    height: 36px;
+  }
+
+input[type="number"],
+input[type="date"],
+input[type="text"] {
+  width: 50%;
+  height: 36px;
+
+}
+}
